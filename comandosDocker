@@ -4,3 +4,5 @@ docer create --name nombreContenedor nombreImagen:Etiqueta
 docker ps -a 
 docker start nombreContenedor
 docker stop nombreContenedor
+docker container prune
+docker run -d -p 80:5173 --name nombreContenedor idImage
