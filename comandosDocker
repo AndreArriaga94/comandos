@@ -1,4 +1,4 @@
-docker build -t nombreContenedor:Etiqueta .
+docker build -t nombreImagen:Etiqueta .
 docker images
 docer create --name nombreContenedor nombreImagen:Etiqueta 
 docker ps -a 
