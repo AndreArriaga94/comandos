@@ -1,0 +1,6 @@
+docker build -t nombreContenedor:Etiqueta .
+docker images
+docer create --name nombreContenedor nombreImagen:Etiqueta 
+docker ps -a 
+docker start nombreContenedor
+docker stop nombreContenedor
