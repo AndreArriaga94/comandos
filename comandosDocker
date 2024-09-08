@@ -16,3 +16,4 @@ docker run -d -p 3000:3000 -v nombreVolumen:/ruta/volumen nombreImagen:etiqueta
 docker run -d -p 80:5173 --name nombreContenedor -v ./src:/app/src nombreImagen:etiqueta #se vincula raiz src a app src para sincronizar archivos SOLO MODO DEV
 docker cp idContenedorCompleto:/ruta/archivo.txt .
 docker cp archivo.txt idContenedorCompleto:/ruta/
+docker compose up
