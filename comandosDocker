@@ -6,3 +6,13 @@ docker start nombreContenedor
 docker stop nombreContenedor
 docker container prune
 docker run -d -p 80:5173 --name nombreContenedor idImage
+docker container rm bb5 #el contenedor tiene que estar detenido
+docker exec -it nombreContenedor sh
+docker exec nombreContenedor ls
+docker volume
+docker volume create nombreVolumen
+docker volume inspect nombreVolumen
+docker run -d -p 3000:3000 -v nombreVolumen:/ruta/volumen nombreImagen:etiqueta
+docker run -d -p 80:5173 --name nombreContenedor -v ./src:/app/src nombreImagen:etiqueta #se vincula raiz src a app src para sincronizar archivos SOLO MODO DEV
+docker cp idContenedorCompleto:/ruta/archivo.txt .
+docker cp archivo.txt idContenedorCompleto:/ruta/
