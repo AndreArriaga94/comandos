@@ -17,3 +17,17 @@ docker run -d -p 80:5173 --name nombreContenedor -v ./src:/app/src nombreImagen:
 docker cp idContenedorCompleto:/ruta/archivo.txt .
 docker cp archivo.txt idContenedorCompleto:/ruta/
 docker compose up
+
+docker images
+docker container ls -aq #muestra los id de todos los contenedores
+docker container rm -f $(docker container ls -aq) #elimina todos los contenedores
+docker image ls -q
+docker image rm $(docker image ls -q) #elimina todas las imagenes
+
+ docker compose up --build -d
+ docker compose logs
+ docker compose logs -ft
+ docker compose ps #ver los contenedores que estan ejecutandose
+ docker compose down
+
+ docker network ls
