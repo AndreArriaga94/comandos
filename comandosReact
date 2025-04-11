@@ -2,3 +2,7 @@ npx create-react-app mi-app
 npm start
 npm run build
 npm test
+
+npm create vite@latest nombreProyecto -- --template react
+npm install 
+npm run dev
